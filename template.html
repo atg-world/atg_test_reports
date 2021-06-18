@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="\\assets\css\\template.css">
+        <title>"""+tester+""" report</title>
+    </head>
+    <body>
+        <table>
+        <tr>
+            <th>Branch</th>
+            <td>"""+android_branch+"""</td> 
+            <th>RESULT</th>
+            """+result+"""
+        </tr>
+        <tr>
+            <th>Suite Name</th>
+            <td>"""+suite_name+"""</td>
+            <th>Tester</th>
+            <td>"""+tester+"""</td>                
+        </tr>
+        <tr>
+            <th>Device Model</th>
+            <td>"""+android_model+"""</td>
+            <th>Device Version</th>
+            <td>"""+and_id+"""</td>
+        </tr>
+        <tr>
+            <th>Platform</th>
+            <td>Android</td>
+            <th>Date of creation</th>
+            <td>"""+date+"""</td>
+        </tr>                            
+        </table>
+
+        <br><br>
+
+        <table>
+        <tr>
+            <th>Total test cases</th>
+            <th class="pass">Passed cases</th> 
+            <th class="fail">Failed Cases</th>
+        </tr>
+        <tr>
+            <td>"""+str(test_cases_count)+"""</td>
+            <td>"""+str(pass_cases)+"""</td>
+            <td>"""+str(test_cases_count-pass_cases)+"""</td>
+        </tr>
+        </table>
+
+        <br>
+
+        <table>
+        <tr>
+            <th>TEST CASES</th>
+            <th>DESCRIPTION</th>
+            """+result+"""
+        </tr>
+        """+logs+"""
+        </table>
+    </body>
+</html>
