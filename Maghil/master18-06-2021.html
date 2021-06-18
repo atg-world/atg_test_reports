@@ -1,0 +1,273 @@
+<html>
+                        <head>
+                            <link rel="stylesheet" href="..\assets\css\template.css">
+                            <title>Maghil report</title>
+                        </head>
+                        <body>
+                            <table>
+                            <tr>
+                                <th>Branch</th>
+                                <td>master</td> 
+                                <th>RESULT</th>
+                                <th class='fail'>FAIL</th>
+                            </tr>
+                            <tr>
+                                <th>Tester</th>
+                                <td>Maghil</td>
+                                <th>Device Version</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Platform</th>
+                                <td>Android</td>
+                                <th>Date of creation</th>
+                                <td>18-06-2021</td>
+                            </tr>
+                            </table>
+
+                            <br><br>
+
+                            <table>
+                            <tr>
+                                <th>Total test cases</th>
+                                <th class="pass">Passed cases</th> 
+                                <th class="fail">Failed Cases</th>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>7</td>
+                                <td>7</td>
+                            </tr>
+                            </table>
+
+                            <br>
+
+                            <table>
+                            <tr>
+                                <th>TEST CASES</th>
+                                <th>DESCRIPTION</th>
+                                <th class='fail'>FAIL</th>
+                            </tr>
+                            <br>Netspeed Selected: full
+<tr><td class='left'>test_articlesTab</td><td><br>to test whether articles are loading up ... 
+<br>Time taken : 35.6448187828064 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_cancelButton</td><td><br>to test the cancel button ... Time taken : 13.033300399780273 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_deselectButton</td><td><br>to test whether the deselect button is working as expected ... Time taken : 26.578112363815308 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_educationTab</td><td>to test whether education are loading up ... ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_eventsTab</td><td><br>to test whether events are loading up ... 
+<br>Time taken : 38.23135852813721 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_jobsTab</td><td><br>to test whether jobs are loading up ... Time taken : 38.43714904785156 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_qriousTab</td><td><br>to test whether qrious are loading up ... Time taken : 28.444333791732788 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_randomScroll</td><td>to test whether the selected tab is scrollable ... ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_searchArticles</td><td><br>to test whether when we search a articles it's showing up when search for it ... 
+ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_searchEducation</td><td><br>to test whether when we search a education it's showing up when search for it ... 
+ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_searchEvents</td><td><br>to test whether when we search a events it's showing up when search for it ... 
+<br>Time taken : 43.779459953308105 
+ok
+</td><th class='clear' >PASS</th></tr><tr><td class='left'>test_searchJobs</td><td>to test whether when we search a jobs it's showing up when search for it ... ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_searchQrious</td><td><br>to test whether when we search a qrious it's showing up when search for it ... 
+ERROR
+</td><th class='fail' >FAIL</th></tr><tr><td class='left'>test_userLoading</td><td><br>to test searched users are loading ... 
+ERROR
+</td><th class='fail' >FAIL</th></tr><br>
+<tr><td colspan='3'><br><br>======================================================================
+<br>ERROR: test_educationTab (__main__.Search)
+<br>to test whether education are loading up
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 80, in test_educationTab
+<br>    self.checkLoading("Education")
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 24, in checkLoading
+<br>    self.driver.find_element_by_accessibility_id(types).click()
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 192, in _wrap
+<br>    result = attrib(*args, **kwargs)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\extensions\search_context\mobile.py", line 47, in find_element_by_accessibility_id
+<br>    return self.find_element(by=MobileBy.ACCESSIBILITY_ID, value=accessibility_id)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\webdriver.py", line 279, in find_element
+<br>    return self.execute(RemoteCommand.FIND_ELEMENT, {
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+<br>    self.error_handler.check_response(response)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+<br>    raise wde
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+<br>    super().check_response(response)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+<br>    raise exception_class(message, screen, stacktrace)
+<br>selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+<br>
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_randomScroll (__main__.Search)
+<br>to test whether the selected tab is scrollable
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 119, in test_randomScroll
+<br>    self.driver.swipe(455,1300,455,900)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 192, in _wrap
+<br>    result = attrib(*args, **kwargs)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\extensions\action_helpers.py", line 136, in swipe
+<br>    action.perform()
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\common\touch_action.py", line 149, in perform
+<br>    self._driver.execute(Command.TOUCH_ACTION, params)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+<br>    self.error_handler.check_response(response)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+<br>    raise wde
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+<br>    super().check_response(response)
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+<br>    raise exception_class(message, screen, stacktrace)
+<br>selenium.common.exceptions.InvalidArgumentException: Message: Coordinate [x=455.0, y=1300.0] is outside of element rect: [0,0][720,1184]
+<br>
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_searchArticles (__main__.Search)
+<br>to test whether when we search a articles it's showing up when search for it
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 91, in test_searchArticles
+<br>    searchSpecific(self.driver,"Articles","an article")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 626, in searchSpecific
+<br>    assert False
+<br>AssertionError
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_searchEducation (__main__.Search)
+<br>to test whether when we search a education it's showing up when search for it
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 103, in test_searchEducation
+<br>    searchSpecific(self.driver,"Education","an education")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 626, in searchSpecific
+<br>    assert False
+<br>AssertionError
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_searchJobs (__main__.Search)
+<br>to test whether when we search a jobs it's showing up when search for it
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 85, in test_searchJobs
+<br>    searchSpecific(self.driver,"Jobs","an job")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 626, in searchSpecific
+<br>    assert False
+<br>AssertionError
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_searchQrious (__main__.Search)
+<br>to test whether when we search a qrious it's showing up when search for it
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 109, in test_searchQrious
+<br>    searchSpecific(self.driver,"Qrious","an question")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 626, in searchSpecific
+<br>    assert False
+<br>AssertionError
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>======================================================================
+<br>ERROR: test_userLoading (__main__.Search)
+<br>to test searched users are loading
+<br>----------------------------------------------------------------------
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 281, in wrapper
+<br>    orig_func(self, *args, **kwargs)
+<br>  File "e:\appium_automation\TestSuite\Search.py", line 124, in test_userLoading
+<br>    searchSpecific(self.driver,"People",data_feeder.appium_username,True)
+<br>  File "e:\appium_automation\Common\atg_common.py", line 606, in searchSpecific
+<br>    WebDriverWait(driver, timer).until(expected_conditions.visibility_of_element_located((By.XPATH, xpath)))
+<br>  File "C:\Users\mmagh\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+<br>    raise TimeoutException(message, screen, stacktrace)
+<br>selenium.common.exceptions.TimeoutException: Message: 
+<br>
+<br>
+<br>During handling of the above exception, another exception occurred:
+<br>
+<br>Traceback (most recent call last):
+<br>  File "e:\appium_automation\Common\atg_common.py", line 284, in wrapper
+<br>    get_logs(driver, "Test Case")
+<br>  File "e:\appium_automation\Common\atg_common.py", line 249, in get_logs
+<br>    raise Exception("Your testcase has failed")
+<br>Exception: Your testcase has failed
+<br>
+<br>----------------------------------------------------------------------
+<br>Ran 14 tests in 668.532s
+<br>
+<br>FAILED (errors=7)
+
+                            </table>
+                        </body>
+                    </html>
